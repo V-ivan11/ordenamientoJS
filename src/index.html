@@ -1,13 +1,37 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="h-screen w-screen">
+    <div class="bg-blue-900 p-6 h-1/6">
+        <p class="text-white font-semibold text-4xl">Algoritmos de Ordenación</p>
+    </div>
+    <div class="flex flex-col h-5/6 justify-evenly p-12">
+        <div class="h-1/6">
+            <button
+                class="btn_animado bg-blue-500 hover:bg-blue-600">
+                Ordenamiento por Burbuja
+            </button>
+        </div>
+        <div class="h-1/6">
+            <button
+                class="btn_animado bg-green-500 hover:bg-green-600">
+                Ordenamiento por Seleccón
+            </button>
+        </div>
+        <div class="h-1/6">
+            <button
+                class="btn_animado bg-red-500 hover:bg-red-600">
+                Ordenamiento por Inserción
+            </button>
+        </div>
+
+    </div>
 </body>
+
 </html>
