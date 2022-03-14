@@ -9,11 +9,11 @@
     <title>Burbuja</title>
 </head>
 
-<body class="h-screen w-screen">
-    <div class="bg-blue-500 h-1/6 flex flex-row p-5">
-        <div class="h-full rounded-full hover:bg-blue-600 flex flex-col justify-center">
+<body class="w-screen h-screen">
+    <div class="flex flex-row p-5 bg-blue-500 h-1/6">
+        <div class="flex flex-col justify-center h-full rounded-full hover:bg-blue-600">
             <a href="index.html" class="text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
@@ -21,16 +21,72 @@
             </a>
         </div>
         <div class="flex flex-col justify-center">
-            <p class="text-white ml-6 font-semibold text-4xl">Ordenamiento Burbuja</p>
+            <p class="ml-6 text-4xl font-semibold text-white">Ordenamiento Burbuja</p>
         </div>
     </div>
-    <div class="flex w-full h-5/6 flex-row flex-wrap">
+    <div class="flex flex-col w-full md:flex-row h-5/6">
 
-        <div class="w-1/2 h-full bg-orange-900 flex flex-col justify-center">
-            <img src="../img/img_burbuja.svg" alt="Ordenamiento Burbuja">
+        <div class="flex flex-col justify-center w-1/2 h-full">
+            <img src="/src/img/img_burbuja.svg" alt="Ordenamiento Burbuja">
         </div>
-        <div class="w-1/2 h-full bg-green-400">
-            a
+        <div class="flex flex-col justify-around w-1/2 h-full p-10">
+            <div class="flex flex-row justify-around w-full h-auto">
+                <div>
+                    <input type="number" id="1" maxlength="1" class="w-12 p-1 border-2 border-sky-900" value="9">
+                </div>
+                <div>
+                    <input type="number" id="2" maxlength="2" class="w-12 p-1 border-2 border-sky-900" value="1">
+                </div>
+                <div>
+                    <input type="number" id="3" maxlength="3" class="w-12 p-1 border-2 border-sky-900" value="8">
+                </div>
+                <div>
+                    <input type="number" id="4" maxlength="4" class="w-12 p-1 border-2 border-sky-900" value="6">
+                </div>
+                <div>
+                    <input type="number" id="5" maxlength="5" class="w-12 p-1 border-2 border-sky-900" value="11">
+                </div>
+                <div>
+                    <input type="number" id="6" maxlength="6" class="w-12 p-1 border-2 border-sky-900" value="23">
+                </div>
+                <div>
+                    <input type="number" id="7" maxlength="7" class="w-12 p-1 border-2 border-sky-900" value="5">
+                </div>
+                <div>
+                    <input type="number" id="8" maxlength="8" class="w-12 p-1 border-2 border-sky-900" value="7">
+                </div>
+            </div>
+            <div class="h-auto pl-12 pr-12">
+                <button class="p-5 bg-blue-500 btn_animado hover:bg-blue-600">
+                    Ejecutar algoritmo
+                </button>
+            </div>
+            <div class="flex flex-row justify-around hidden w-full h-auto" id="div_res">
+                <div id="r1" class="div_resultado">
+                    1
+                </div>
+                <div id="r2" class="div_resultado">
+                    1
+                </div>
+                <div id="r3" class="div_resultado">
+                    1
+                </div>
+                <div id="r4" class="div_resultado">
+                    1
+                </div>
+                <div id="r5" class="div_resultado">
+                    1
+                </div>
+                <div id="r6" class="div_resultado">
+                    1
+                </div>
+                <div id="r7" class="div_resultado">
+                    1
+                </div>
+                <div id="r8" class="div_resultado">
+                    1
+                </div>
+            </div>
         </div>
     </div>
 </body>
