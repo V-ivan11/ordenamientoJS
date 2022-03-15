@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
     <title>Burbuja</title>
+    <script src="funciones.js"></script>
 </head>
 
 <body class="w-screen h-screen">
@@ -27,7 +28,7 @@
     <div class="flex flex-col w-full md:flex-row h-5/6">
 
         <div class="flex flex-col justify-center w-1/2 h-full">
-            <img src="/img/img_burbuja.svg" alt="Ordenamiento Burbuja">
+            <img src="/src/img/img_burbuja.svg" alt="Ordenamiento Burbuja">
         </div>
         <div class="flex flex-col justify-around w-1/2 h-full p-10">
             <div class="flex flex-row justify-around w-full h-auto">
@@ -57,34 +58,39 @@
                 </div>
             </div>
             <div class="h-auto pl-12 pr-12">
-                <button class="p-5 bg-blue-500 btn_animado hover:bg-blue-600">
+                <button class="p-5 bg-blue-500 btn_animado hover:bg-blue-600" onclick="bubbleSort()">
                     Ejecutar algoritmo
                 </button>
             </div>
-            <div class="flex flex-row justify-around hidden w-full h-auto" id="div_res">
+
+            <p class="ml-6 text-3xl font-semibold text-black">Arreglo ordenado: </p>
+
+            <div class="flex flex-row justify-around w-full h-auto" id="div_res">
+                
+
                 <div id="r1" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r2" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r3" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r4" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r5" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r6" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r7" class="div_resultado">
-                    1
+                    -
                 </div>
                 <div id="r8" class="div_resultado">
-                    1
+                    -
                 </div>
             </div>
         </div>
